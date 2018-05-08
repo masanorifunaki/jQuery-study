@@ -4,6 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>jQueryの練習</title>
+  <style>
+    .myStyle {
+      border: 5px solid green;
+      font-size: 48px;
+    }
+  </style>
 </head>
 
 <body>
@@ -12,29 +18,40 @@
     <input type="text" name="name" id="name">
     <input type="button" id="greet" value="Greet!">
   </p>
+  <button>もっと読む</button>
   <div id="result"></div>
   <button>Add!</button>
   <input type="text" id="name">
   <select id="members" name="members">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
+    <option>a</option>
+    <option>b</option>
+    <option>c</option>
   </select>
   <div id="box" style="width:100px;height:100px;background:red;"></div>
   <input type="text" value="hello">
   <p>
-    <a href="http://google.com" data-google="OK">Google</a>
+    <a href="http://google.com" data-sitename="google">Google</a>
   </p>
   <p>
     <a href="http://yahoo.co.jp">Yahoo!</a>
   </p>
-  <ul>
+  <ul id="main">
     <li>0</li>
-    <li>1</li>
-    <li>2</li>
+    <li class="item">1</li>
+    <li class="item">2</li>
+    <li>
+      3
+      <ul id="sub">
+        <li>3-0</li>
+        <li>3-1</li>
+        <li class="item">3-2</li>
+        <li class="item">3-3</li>
+        <li>3-4</li>
+      </ul>
+    </li>
   </ul>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="script2.js"></script>
 </body>
 
 </html>
